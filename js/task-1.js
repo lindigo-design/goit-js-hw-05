@@ -1,11 +1,6 @@
-function isEnoughCapacity(products, containerSize){
-  let total =0;
-  const values = Object.values(products);
-  for (const quantity of values){
-    total +=quantity;
-  }
-  return total <=containerSize;
-}
+const getUserNames = (users) => {
+  return users.map(user => user.name);
+};
 console.log(
   isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
 ); // true
